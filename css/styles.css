@@ -1,0 +1,285 @@
+
+
+/*скидаємо стилі від браузера*/
+.list {
+    list-style: none;
+}
+
+/* скидаємо підкреслення посилань */
+.link {
+    text-decoration: none;
+}
+
+
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-text-color: #2196F3;
+    --primary-bg-color: #E5E5E5;
+    --primary-white-color: #FFFFFF;
+    --primary-font: 'Roboto','Raleway',sans-serif;
+    --primary-font-size: 14px;
+    
+}
+
+
+body {
+ 
+    background-color: var(--primary-bg-color);
+    font-family: var(--primary-font);
+    font-size: var(--primary-font-size);
+    /* font-weight: 400; */
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+
+    
+}
+
+/* ===================components================== */
+
+/*  button */
+.button {
+    border: none;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: var(--accent-text-color);
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    background-color: #188CE8;
+}
+
+.button-secondary {
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+                                          
+    text-align: center;
+    letter-spacing: 0.03em;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    background-color: var(--accent-text-color);
+    color: var(--primary-white-color);
+}
+
+/* заголовки і підзаголовки в секціях*/
+.subtitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* клас, що приховує візуально*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+/* клас, що підсвічує активну сторінку */
+.menu-link.current {
+    color: var(--accent-text-color);
+}
+
+/* ===================/components================== */
+
+
+/* ===================header ========================*/
+
+.page-header {
+    background-color: var(--primary-white-color);
+}
+
+/* задаємо стилі логотипу */
+.logo {
+    color: var(--title-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo-accent {
+    color: var(--accent-text-color);
+}
+
+.logo-accentD {
+    color: var(--primary-white-color);
+}
+
+/*стилі навігації*/
+
+.menu-link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+
+.menu-link:hover, 
+.menu-link:focus {
+    color: var(--accent-text-color);
+}
+
+.cont-nav a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.cont-nav:hover,
+.cont-nav:focus {
+    color: var(--accent-text-color);
+}
+
+
+/* ===================/header ========================*/
+
+/* ===================hero ========================*/
+
+.hero {
+    background-color: #2F303A;
+}
+
+
+/* колір заголовка в рішеннях*/
+
+.hero-title {
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase
+}
+
+/* ===================/hero ========================*/
+
+
+/* ===================features ========================*/
+
+.features-minititle{
+    color: var(--title-text-color);
+    font-weight: 700;
+line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.block-features {
+    line-height: 1.71;
+}
+
+
+/* ===================/features ========================*/
+
+/* ===================team ========================*/
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-minititle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.team-description {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.team-card {
+    background: #FFFFFF;
+
+
+    /* material shadow v1 */
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+/* ===================/team ========================*/
+
+/* ===================footer========================*/
+
+.footer {
+    background-color: #2F303A;;
+}
+
+.footer-cont {
+    font-style: normal;
+    line-height: 1.71;
+    
+
+ }
+
+ .footer-link {
+    font-style: normal;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+ }
+
+ .footer-alink {
+    text-decoration: none;
+    color: var(--primary-white-color);
+ }
+        
+ /* ===================/footer========================*/
+
+/* ===================portfolio========================*/
+ .portfolio-card {
+    background: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+
+ }
+
+ .portfolio-subtitle {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+ }
+
+ .portfolio-description {
+    font-size: 16px;
+    line-height: 1.87;
+    
+ }
+ /* ===================/portfolio========================*/
