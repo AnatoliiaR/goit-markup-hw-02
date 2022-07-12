@@ -18,6 +18,13 @@
     --accent-text-color: #2196F3;
     --primary-bg-color: #E5E5E5;
     --primary-white-color: #FFFFFF;
+    --color-grey-eeee: #EEEEEE;
+    --color-black-000: #000000;
+    --color-whitegrey-f5f4: #F5F4FA;
+    --color-blacklight-2f30: #2F303A;
+    --color-white-rich: #ECECEC;
+    --color-hover-button: #188CE8;
+    --color-white-transparent: rgba(255, 255, 255, 0.6);
     --primary-font: 'Roboto','Raleway',sans-serif;
     --primary-font-size: 14px;
     
@@ -26,10 +33,9 @@
 
 body {
  
-    background-color: var(--primary-bg-color);
+    background-color: var(--primary-white-color);
     font-family: var(--primary-font);
     font-size: var(--primary-font-size);
-    /* font-weight: 400; */
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
 
@@ -39,21 +45,26 @@ body {
 /* ===================components================== */
 
 /*  button */
-.button {
+/* .button {
     border: none;
     
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-}
+} */
 
 .button-primary {
+    border: none;
     background-color: var(--accent-text-color);
     color: var(--primary-white-color);
+    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
     display: flex;
     align-items: center;
     text-align: center;
@@ -63,12 +74,14 @@ body {
 
 .button-primary:hover,
 .button-primary:focus {
-    background-color: #188CE8;
+    background-color: var(--color-hover-button);
 }
 
 .button-secondary {
+    border: none;
     color: var(--title-text-color);
-    background-color: #F5F4FA;
+    background-color: var(--color-whitegrey-f5f4);
+    font-family: var(--primary-font); 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -76,6 +89,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .button-secondary:hover,
@@ -115,9 +130,6 @@ body {
 
 /* ===================header ========================*/
 
-.page-header {
-    background-color: var(--primary-white-color);
-}
 
 /* задаємо стилі логотипу */
 .logo {
@@ -194,8 +206,9 @@ body {
 
 .features-minititle{
     color: var(--title-text-color);
+    font-size: var(--primary-font-size);
     font-weight: 700;
-line-height: 1.14;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 
@@ -225,8 +238,8 @@ line-height: 1.14;
     text-align: center;
 }
 
-.team-card {
-    background: #FFFFFF;
+ .team-card {
+    background: #FFFFFF; 
 
 
     /* material shadow v1 */
@@ -242,24 +255,36 @@ line-height: 1.14;
     background-color: #2F303A;;
 }
 
-.footer-cont {
+ .footer-cont {
     font-style: normal;
-    line-height: 1.71;
-    
-
+    line-height: 1.71; 
  }
 
+
  .footer-link {
+
     font-style: normal;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--color-white-transparent);
  }
 
  .footer-alink {
     text-decoration: none;
+    font-style: normal;
     color: var(--primary-white-color);
  }
-        
+
+
+.list .footer-alink:hover,
+.list .footer-alink:focus{
+    color: var(--accent-text-color);
+}
+
+.list .footer-link:hover,
+.list .footer-link:focus {
+    color: var(--accent-text-color);
+}
+
  /* ===================/footer========================*/
 
 /* ===================portfolio========================*/
